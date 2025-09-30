@@ -7,34 +7,28 @@ const TextToSpeech = () => {
   const [rate, setRate] = useState(1);
   const [speakingPhrase, setSpeakingPhrase] = useState(null);
 
-  // تحميل الأصوات + fallback
+  useEffect(() => {
   const loadVoices = () => {
-    let availableVoices = window.speechSynthesis.getVoices();
+    const voices = window.speechSynthesis.getVoices();
+    setVoices(voices);
 
-    if (availableVoices.length === 0) {
-      // hack بسيط: ننطق نص فاضي عشان iOS يحمّل الأصوات
-      window.speechSynthesis.speak(new SpeechSynthesisUtterance(""));
-      availableVoices = window.speechSynthesis.getVoices();
-    }
-
-    setVoices(availableVoices);
-
-    // fallback اختيارات للصوت
-    const defaultVoice =
-      availableVoices.find((v) => v.name === "Google UK English Male") ||
-      availableVoices.find((v) => v.lang === "en-GB") ||
-      availableVoices.find((v) => v.lang.startsWith("en")) ||
-      availableVoices[0];
-
+    // نحاول نجيب Google UK English Male كـ default
+    const defaultVoice = voices.find(v => v.name === "Google UK English Male");
     if (defaultVoice) {
       setSelectedVoice(defaultVoice);
+    } else if (voices.length > 0) {
+      // fallback لو مش لاقيه
+      setSelectedVoice(voices[0]);
     }
   };
 
-  useEffect(() => {
-    loadVoices();
-    window.speechSynthesis.onvoiceschanged = loadVoices;
-  }, []);
+  // في بعض المتصفحات لازم نستنى onvoiceschanged
+  window.speechSynthesis.onvoiceschanged = loadVoices;
+
+  // نستدعي مرة أولى (لو الأصوات محملة أصلاً)
+  loadVoices();
+}, []);
+
 
   const sanitizeText = (text) => {
     return text
@@ -44,11 +38,11 @@ const TextToSpeech = () => {
       .trim();
   };
 
+
   const speak = (text, id) => {
-    // نضمن إن الأصوات متاحة
-    if (!voices.length) loadVoices();
     if (!selectedVoice) return;
 
+    // clean النص قبل النطق
     const cleanText = sanitizeText(text);
 
     window.speechSynthesis.cancel();
@@ -63,7 +57,9 @@ const TextToSpeech = () => {
     window.speechSynthesis.speak(utterance);
   };
 
+
   const stop = (id) => {
+    // يوقف فقط لو دي هي الجملة الحالية
     if (speakingPhrase === id) {
       window.speechSynthesis.cancel();
       setSpeakingPhrase(null);
@@ -93,12 +89,6 @@ const TextToSpeech = () => {
         </select>
       </label>
 
-      {voices.length === 0 && (
-        <p style={{ color: "red" }}>
-          ⚠️ Voice selection not available on this device/browser.
-        </p>
-      )}
-
       {/* speed controller */}
       <label style={{ marginLeft: "20px" }}>
         Speed:{" "}
@@ -123,8 +113,7 @@ const TextToSpeech = () => {
           }}
         >
           <h2>{section.title}</h2>
-          <table
-            className="table table-bordered"
+          <table className="table table-bordered"
             border="1"
             cellPadding="10"
             style={{ borderCollapse: "collapse", width: "100%" }}
