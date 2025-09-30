@@ -71,7 +71,7 @@ const TextToSpeech = () => {
       <h1>English Phrases with Text-to-Speech</h1>
 
       {/* voice selector */}
-      <label>
+      <label style={{display:"none"}}>
         Voice:{" "}
         <select
           onChange={(e) =>
