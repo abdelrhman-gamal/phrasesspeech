@@ -67,7 +67,7 @@ const TextToSpeech = () => {
   };
 
   return (
-    <div style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>
+    <div style={{ fontFamily: "Arial, sans-serif" }}>
       <h1>English Phrases with Text-to-Speech</h1>
 
       {/* voice selector */}
