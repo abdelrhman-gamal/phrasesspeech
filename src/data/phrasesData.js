@@ -242,13 +242,13 @@ const JSON_DATA = [
   {
     "title": "عبارات التقارير الدورية الموجهة لولي الأمر",
     "data": [
-      {"en": "\"student name\" has practiced in today`s class on ...", "ar": "تم تدريب الطالب في حصة اليوم على..."},
+      {"en": "\"student name\" has practiced in today's class on ...", "ar": "تم تدريب الطالب في حصة اليوم على..."},
       {"en": "\"Student name\" has recited\\ memorized surat...", "ar": "قام الطالب بتلاوة/حفظ سورة..."},
       {"en": "Please! \"Student name\" needs to practice more on…", "ar": "أرجو تدريب الطالب أكثر على..."},
       {"en": "The recitation of surat… from verse no. () to verse no. () was corrected.", "ar": "تم تصحيح تلاوة سورة... من الآية () إلى الآية ()"},
       {"en": "\"Student name\" has read page no. () of Noor al bayan\\Nouraniah\\FatH al Rahman book.", "ar": "قام الطالب بقراءة صفحة رقم () من كتاب نور البيان/القاعدة النورانية/فتح الرحمن."},
       {"en": "Today, we talked about how to perform Ablution\\ daily prayers.", "ar": "تحدثنا اليوم عن كيفية الوضوء/الصلاة."},
-      {"en": "Student`s level today is Good\\ Very good\\ Excellent.", "ar": "مستوى الطالب اليوم جيد/جيد جدا/ممتاز."},
+      {"en": "Student's level today is Good\\ Very good\\ Excellent.", "ar": "مستوى الطالب اليوم جيد/جيد جدا/ممتاز."},
       {"en": "\"Student name\" attended the class ten minutes late.", "ar": "حضر الطالب إلى الحصة متأخرا عشر دقائق."},
       {"en": "\"Student name\" didn’t attend\\(show up for the class today.", "ar": "لم يحضر الطالب إلى الحصة اليوم."}
     ]
@@ -260,7 +260,7 @@ const JSON_DATA = [
       {"en": "I really enjoyed my class with you.", "ar": "لقد استمتعت حقا بالحصة معك."},
       {"en": "I have to leave now, See you soon.", "ar": "يجب أن أغادر الآن، أراك قريبا."},
       {"en": "See you next Saturday at our regular\\ usual time.", "ar": "أراك السبت القادم في موعدنا المعتاد."},
-      {"en": "That is enough today, Let`s resume next class.", "ar": "هذا يكفي اليوم، نستكمل الحصة القادمة."},
+      {"en": "That is enough today, Let's resume next class.", "ar": "هذا يكفي اليوم، نستكمل الحصة القادمة."},
       {"en": "I will be waiting for next Thursday to meet you.", "ar": "سأكون في انتظار لقائك الخميس القادم."},
       {"en": "Kindly practice very well untill we meet each other next time.", "ar": "تدرب جيدا حتى نلتقي المرة القادمة."},
       {"en": "I will text you about the time of next class.", "ar": "سأرسل لك بخصوص موعد الحصة القادمة."}
@@ -276,8 +276,8 @@ const JSON_DATA = [
       {"en": "This letter is (Ya) not (Ba), We have two dots not only one.", "ar": "هذه ياء وليست باء، لدينا نقطتان."},
       {"en": "This letter is (Laam) not (Alif), (Alif) cannot be connected to the next letter.", "ar": "هذا الحرف لام وليس ألف، الألف لا تتصل بما بعدها."},
       {"en": "This is another form\\shape of the letter (Meem) in the middle of the word.", "ar": "هذا شكل آخر لحرف الميم في وسط الكلمة."},
-      {"en": "This is the letter`s (Kaaf) shape in the beginning of the word.", "ar": "هذا هو شكل حرف الكاف في أول الكلمة."},
-      {"en": "This letter is (Zai) not (Thal), Don`t put your tongue towards outside.", "ar": "هذه زاي وليست ذال، لا تخرج طرف لسانك."},
+      {"en": "This is the letter's (Kaaf) shape in the beginning of the word.", "ar": "هذا هو شكل حرف الكاف في أول الكلمة."},
+      {"en": "This letter is (Zai) not (Thal), Don't put your tongue towards outside.", "ar": "هذه زاي وليست ذال، لا تخرج طرف لسانك."},
       {"en": "Pronounce it like ... letter in your language.", "ar": "انطقه كما تنطق حرف ال... في لغتك."},
       {"en": "(Tha) letter has only one edge\\tooth, and (Sheen) letter has three edges\\teeth.", "ar": "الثاء لديها حافة واحدة، الشين لديها ثلاث حواف."}
     ]
@@ -289,17 +289,17 @@ const JSON_DATA = [
       {"en": "Do not stretch your sound, it is a short vowel.", "ar": "لا تمد صوتك، هذه حركة قصيرة."},
       {"en": "Stretch it a little bit, we have natural madd.", "ar": "قم بإطالة الصوت فيها قليلا، لدينا مدا طبيعيا"},
       {"en": "Round\\Circle your two lips properly.", "ar": "قم بضم شفتيك جيدا."},
-      {"en": "This non-voweled alif) is just a helper to make the (fatHa) sound longer, Don`t pronounce it.", "ar": "هذه الألف العارية عن الحركات فقط لإطالة صوت الفتحة، لا تنطقها."},
-      {"en": "Don`t pronounce this (waw), just stretch the (Dammah) sound a little bit.", "ar": "لا تنطق هذه الواو، فقط أطل صوت الضمة."},
-      {"en": "This (Yaa) shouldn`t be pronounced, It just helps the (kasrah) to be longer.", "ar": "هذه الياء لا تنطق، فقط تساعد الكسرة ليكون صوتها أطول."}
+      {"en": "This non-voweled alif) is just a helper to make the (fatHa) sound longer, Don't pronounce it.", "ar": "هذه الألف العارية عن الحركات فقط لإطالة صوت الفتحة، لا تنطقها."},
+      {"en": "Don't pronounce this (waw), just stretch the (Dammah) sound a little bit.", "ar": "لا تنطق هذه الواو، فقط أطل صوت الضمة."},
+      {"en": "This (Yaa) shouldn't be pronounced, It just helps the (kasrah) to be longer.", "ar": "هذه الياء لا تنطق، فقط تساعد الكسرة ليكون صوتها أطول."}
     ]
   },
   {
     "title": "السكون والتنوين",
     "data": [
-      {"en": "Don`t produce any movements, this sakin letter should be stable.", "ar": "لا تنتج أي حركة، هذا حرف ساكن غير متحرك."},
+      {"en": "Don't produce any movements, this sakin letter should be stable.", "ar": "لا تنتج أي حركة، هذا حرف ساكن غير متحرك."},
       {"en": "This letter should be pronounced with some shaking\\ vibration in case of sukoon.", "ar": "يجب قلقلة هذا الحرف في حالة السكون. أي عمل بعض الاهتزاز أو الاضطراب في صوت نطقه."},
-      {"en": "This is not a (qalqalah) letter, Don`t shake it.", "ar": "لا تحدث قلقلة عند نطق هذا الحرف، هو ليس من حروف القلقلة."},
+      {"en": "This is not a (qalqalah) letter, Don't shake it.", "ar": "لا تحدث قلقلة عند نطق هذا الحرف، هو ليس من حروف القلقلة."},
       {"en": "Pronounce (sakinah Noon) sound at the end of tanween.", "ar": "انطق صوت نون ساكنة في نهاية التنوين."}
     ]
   },
@@ -336,13 +336,13 @@ const JSON_DATA = [
       {"en": "It should be pronounced as one (Meem mushddah) with most complete (Ghunnah).", "ar": "هذه تنطق ميما واحدة مشددة بغنة أكمل ما يكون."},
       {"en": "Avoid merging the sound of (Laam sakinah) in the middle of the word.", "ar": "تجنب إدغام صوت اللام الساكنة في وسط الكلمة."},
       {"en": "The letter (Laam) is carrying (Sukoon) sign, Pronounce it clearly.", "ar": "اللام تحمل علامة السكون، انطقها واضحة."},
-      {"en": "The letter (Laam) carries nothing, Don`t pronounce it.", "ar": "اللام لا تحمل علامات، لا تنطقها."}
+      {"en": "The letter (Laam) carries nothing, Don't pronounce it.", "ar": "اللام لا تحمل علامات، لا تنطقها."}
     ]
   },
   {
     "title": "همزة الوصل والتقاء الساكنين",
     "data": [
-      {"en": "Don`t pronounce (Hamzatul wasl) in case of continuation of reading.", "ar": "لا تنطق همزة الوصل في حالة الاستمرار في القراءة."},
+      {"en": "Don't pronounce (Hamzatul wasl) in case of continuation of reading.", "ar": "لا تنطق همزة الوصل في حالة الاستمرار في القراءة."},
       {"en": "Give (Hamzatul wasl) short (FatHat) sound before the definite article (Laam).", "ar": "انطق همزة الوصل مع حركة فتحة قصيرة عند البدء بها قبل ال التعريف."},
       {"en": "Give (Kasrah) sound at the end of this (tanween) to avoid meeting of two (sakin) letters.", "ar": "أعط صوت كسرة في نهاية التنوين لتجنب التقاء ساكنين."},
       {"en": "This small circle above the letter means that this letter is not pronounced.", "ar": "هذه الدائرة الصغيرة فوق الحرف معناها أن الحرف لا ينطق."},
@@ -356,7 +356,7 @@ const JSON_DATA = [
       {"en": "It means that it is allowed to stop on this word and stopping is better.", "ar": "ج"},
       {"en": "It means that it is allowed to stop on this word.", "ar": "ال"},
       {"en": "It means that it is allowed to stop on this word but continuing is better.", "ar": "مـ"},
-      {"en": "It means: Don`t stop on this word and start with the following word.", "ar": ""},
+      {"en": "It means: Don't stop on this word and start with the following word.", "ar": ""},
       {"en": "It means that you are required to stop on this word.", "ar": ""},
       {"en": "This sign indicates the ending of one quarter (Rub) of joz and starting a new one.", "ar": ""},
       {"en": "It means that you should stop on only one of these points not both of them.", "ar": ""}
